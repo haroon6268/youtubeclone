@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      .content{
+        margin-left: 250px;
+      }
+      @media (max-width: 680px){
+        .sidebar{
+        display: none;
+      }
+      .content{
+        margin-left: 0
+      }
+     
+      }
+        
+      
+      
+    
+    </style>
+</head>
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark" style="margin-bottom: 0px; top: 0; position: fixed; z-index: 1; width: 100vw;">
+    <div class="container-fluid">
+      <a href="#"><img src="./assets/1280px-YouTube_dark_logo_2017.svg.png" class="youtubelogo"></a>
+      <div>
+      <form class="d-flex" role="search" style="margin-right: 0; padding: 0;">
+          <input class="form-control searchnav bg-dark text-light mx-0 search1" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light search1" type="submit" style="position: relative; right: 42px; border-radius: 0 50px 50px 0;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
+        </form>
+      </div>
+      <div class="col-auto justify-content-end icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell mx-2 icon" viewBox="0 0 16 16" style="color: white;" >
+          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera-video mx-2 icon" viewBox="0 0 16 16" style="color: white;">
+          <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+        </svg>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container sidebar" style="padding: 0; float: left; width: 280px; margin: 0; position: fixed; top: 50px;">
+    <div class="row" style="width: 280px; margin: 0; padding: 0;">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100vh;">
+      <ul class="nav nav-pills flex-column mb-auto red">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16" style="position: relative; bottom: 2px">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+            </svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16" style="position: relative; bottom: 4px;">
+              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+            Shorts
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-play" viewBox="0 0 16 16" style="position: relative; bottom: 2px">
+              <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"/>
+              <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z"/>
+            </svg>
+            Subscriptions
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16" style="position: relative; bottom: 4px;">
+              <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+            </svg>
+            Library
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>mdo</strong>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid p-0">
+    <div class="row p-0 ml-5 justify-content-center content" style="margin-top: 50px;">
+      <div class="col-auto">
+        <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+        <h5 style="color: white;" class="mt-1">Sample Video</h5>
+        <p style="color: white; font-size: smaller;">Sample Channel</p>
+      </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    <div class="col-auto">
+      <img src="./assets/unnamed.jpeg" alt="thumbnail" style="height: 175px;" class="mt-4 ml-4 mr-4">
+      <h5 style="color: white;" class="mt-1">Sample Video</h5>
+      <p style="color: white; font-size: smaller;">Sample Channel</p>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

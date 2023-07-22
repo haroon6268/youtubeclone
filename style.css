@@ -1,0 +1,13 @@
+.youtubelogo{
+    height: 22px;
+}
+.navbartext{
+    color: white;
+}
+.searchnav{
+    border-radius: 50px;
+    width: 35vw;
+}
+.nav-pills > li > a.active {
+    background-color: #ff0000 !important;
+}
